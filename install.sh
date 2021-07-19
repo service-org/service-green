@@ -6,4 +6,4 @@ sudo rm -rf service_green.egg-info build dist
 # sudo pip install -U setuptools wheel twine
 # sudo python3 setup.py sdist bdist_wheel
 # sudo twine upload dist/*
-# sudo rm -rf service_green.egg-info build dist
+# sudo rm -rf service_consul.egg-info build dist
