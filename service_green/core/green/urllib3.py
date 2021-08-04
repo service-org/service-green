@@ -13,7 +13,7 @@ from eventlet.green.http import client
 from eventlet.green.http import cookies
 from eventlet.green.http import cookiejar
 
-from . import json
+from . import pjson
 
 patcher.inject(
     'urllib3', globals(),
@@ -26,6 +26,6 @@ patcher.inject(
     # 注入time  到当前命名空间
     ('time', time),
     # 注入json  到当前命名空间
-    ('json', json)
+    ('json', pjson)
 )
 del patcher

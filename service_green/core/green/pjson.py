@@ -9,6 +9,7 @@ try:
 except:
     import json as fast_json
 
+# 将json/ujson所有成员注入到当前命名空间
 for name in dir(fast_json):
     globals()[name] = getattr(fast_json, name)
 
