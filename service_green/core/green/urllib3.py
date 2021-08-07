@@ -18,7 +18,7 @@ from . import cjson
 patcher.inject(
     'urllib3', globals(),
     # 注入http  到当前命名空间
-    ('http', http), ('client', client), ('cookies', cookies), ('cookiejar', cookiejar),
+    ('http', http), ('http.client', client), ('http.cookies', cookies), ('http.cookiejar', cookiejar),
     # 注入socket到当前命名空间
     ('socket', socket),
     # 注入ssl   到当前命名空间
