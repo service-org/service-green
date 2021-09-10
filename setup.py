@@ -27,6 +27,6 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     install_requires=[
-        'eventlet==0.31.1', 'ujson==4.0.2', 'urllib3==1.26.6'
+        'eventlet==0.32.0', 'ujson==4.0.2', 'urllib3==1.26.6'
     ]
 )
